@@ -1,2 +1,2 @@
 # color_stack_website
-A website for the color stack club
+A dynamic website for the color stack club
