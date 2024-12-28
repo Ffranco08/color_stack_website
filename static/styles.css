@@ -1,0 +1,83 @@
+/* Style for the large outer oval around the whole nav bar */
+nav {
+    text-align: center;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center; /* Center the outer oval on the page */
+    width: 100%; /* Full width to center the entire nav */
+}
+
+/* Style for the larger oval around the smaller oval */
+.outer-oval {
+    display: flex; /* Use flexbox to align items (image, nav-list, login, etc.) */
+    align-items: center; /* Vertically align the children */
+    justify-content: center; /* Center all items horizontally */
+    padding: 10px; /* Affects the thickness around the oval */
+    width: 1300px; /* Set the width for the outer oval */
+    min-height: 60px; /* Set a minimum height */
+    border-radius: 30px; /* Round corners */
+    background-color: #000000;
+    margin: 0 auto; /* Center the outer oval horizontally */
+}
+
+/* Style for the smaller oval around the ul elements */
+.nav-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 10px; 
+    display: inline-flex;
+    gap: 15px; /* Space between list items */
+    border-radius: 25px;
+    background-color: #FFFFFF;
+}
+
+/* List items */
+.nav-list li {
+    display: inline;
+}
+
+/* Links styling */
+.nav-list a {
+    padding: 5px;
+    border-radius: 15px; /* Smaller oval shape */
+    text-decoration: none;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.nav-list a:hover {
+    background-color: #FCB432; /* Darker shade for hover effect */
+    border-radius: 15px;
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+/* Style for the login button (Base Attributes) */
+.login-button {
+    display: inline-block;
+    padding: 10px 16px; /* Oval dimensions */
+    border-radius: 25px; /* Oval's roundness */
+    background-color: #FCB432;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Links inside the login button */
+.login-button a {
+    color: inherit;
+    text-decoration: none; /* Removes underline for link */
+}
+
+.login-button a:hover {
+    color: #FFFFFF;
+}
+
+.nav-image {
+    width: 60px;  
+    height: 60px;  
+}

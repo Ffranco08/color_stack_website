@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>UCSD ColorStack</title>
+    <!-- Link to locally stored Bootstrap CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- Link to your custom CSS file -->
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">   
+</head>
+<body>
+    <nav>
+        <div class="outer-oval d-flex align-items-center justify-content-between">
+            <!-- Example Image -->
+            <img src="/static/images/OG_design.png" alt="Logo" class="nav-image img-fluid">
+        
+            <!-- The Navigation List -->
+            <ul class="nav-list d-flex list-unstyled mb-0">
+                <li class="mx-2"><a href="#" class="text-decoration-none">Home</a></li>
+                <li class="mx-2"><a href="#" class="text-decoration-none">About</a></li>
+                <li class="mx-2"><a href="#" class="text-decoration-none">Services</a></li>
+                <li class="mx-2"><a href="#" class="text-decoration-none">Contact</a></li>
+            </ul>
+        
+            <!-- Login Button -->
+            <div class="login-button">
+                <a href="#">Login</a>
+            </div>
+        </div>
+        
+    </nav>
+    <!-- Link to locally stored Bootstrap JS -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>
