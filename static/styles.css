@@ -1,3 +1,8 @@
+/* Global setting for the entire page */
+* {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
 /* Style for the large outer oval around the whole nav bar */
 nav {
     text-align: center;
@@ -9,6 +14,9 @@ nav {
 
 /* Style for the larger oval around the smaller oval */
 .outer-oval {
+    display: flex; /* Enables flexbox for the outer container */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
     padding: 10px; /* Affects the thickness around the oval */
     width: 90%; /* Scales the width to 90% of the parent/container width */
     max-width: 1300px; /* Prevents it from exceeding 1300px */
@@ -19,19 +27,22 @@ nav {
 
 /* Style for the smaller oval around the ul elements */
 .nav-list {
-    list-style-type: none; /* Remove default list styling */
-    padding: 10px; 
-    display: inline-flex;
-    gap: 50px; /* Space between list items */
-    border-radius: 25px;
+    display: flex !important; /* Override any inherited display properties */
+    justify-content: space-evenly !important; /* Centers the nav items horizontally */
+    align-items: center; /* Centers the nav items vertically */
+    gap: 50px; /* Space between items */
+    border-radius: 25px; /* Oval shape */
     background-color: #FFFFFF;
-    width: 50%; 
-
+    width: 80%; 
+    white-space: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Optional: Add horizontal scrolling on small screens */
+    min-height: 40px; /* Ensure it has enough height */
+    margin: 0 auto; /* Center itself within the outer oval */
 }
 
-/* List items */
+/* Ensure nav items align correctly */
 .nav-list li {
-    display: inline;
+    flex-shrink: 0; /* Prevent shrinking */
 }
 
 /* Links styling */
@@ -40,7 +51,6 @@ nav {
     border-radius: 15px; /* Smaller oval shape */
     text-decoration: none;
     color: #000000;
-    font-family: Arial, sans-serif;
     font-size: 16px;
     transition: background-color 0.3s;
 }
@@ -57,6 +67,7 @@ nav {
 .login-button {
     display: inline-block;
     padding: 10px 20px; /* Oval dimensions */
+    margin-right: 10px; /* Spacing between the login button and the nav items */
     border-radius: 25px; /* Oval's roundness */
 }
 
