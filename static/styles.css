@@ -1,6 +1,7 @@
 /* Global setting for the entire page */
 * {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    font-family: 'New Courier', Helvetica, Arial, sans-serif !important;
+    font-size: 1rem;
 }
 
 /* Style for the large outer oval around the whole nav bar */
