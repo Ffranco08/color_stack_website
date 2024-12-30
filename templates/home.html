@@ -6,6 +6,7 @@
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Link to your custom CSS file -->
     <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">   
+    
 </head>
 <body>
     <nav>
@@ -14,7 +15,7 @@
             <img src="/static/images/OG_design.png" alt="Logo" class="nav-image img-fluid">
         
             <!-- The Navigation List -->
-            <ul class="nav-list d-flex list-unstyled mb-0">
+            <ul class="nav-list d-inline-flex list-unstyled mb-0 justify-content-center flex-wrap">
                 <li class="mx-2"><a href="#" class="text-decoration-none">Home</a></li>
                 <li class="mx-2"><a href="#" class="text-decoration-none">About</a></li>
                 <li class="mx-2"><a href="#" class="text-decoration-none">Services</a></li>
@@ -22,12 +23,41 @@
             </ul>
         
             <!-- Login Button -->
-            <div class="login-button">
+            <div class="login-button button-style button-hover">
                 <a href="#">Login</a>
             </div>
         </div>
-        
     </nav>
+
+    <!-- Hero Section with columns for responsive scaling -->
+    <div class="hero-section mt-5">
+        <div class="container-fluid">
+            <!-- Flexbox container for hero content -->
+            <div class="row justify-content-between align-items-center p-4 ">
+                <!-- Left Section (Text) -->
+                <div class="text-section col-12 col-md-6 mb-4 mb-md-0">
+                    <h1 class="display-5">
+                        <span class="text-warning">Empowering</span> Black and Latinx 
+                        <span class="text-warning">Students</span> to Thrive 
+                        <span class="text-warning">In STEM</span>
+                    </h1>
+                    <p class="mt-3 description bg-white text-dark p-3 rounded">
+                        Color Stack is dedicated to supporting underrepresented students in STEM through community building, events, and mentorship.
+                    </p>
+                    <div class="button-group d-flex justify-content-center w-100", style="margin-top: 35px;">
+                        <a href="#" class="btn button-style button-hover me-5">Get Involved</a>
+                        <a href="#" class="btn button-style button-hover">Student Spotlight</a>
+                    </div>
+                </div>
+
+                <!-- Right Section (Image) -->
+                <div class="image-section col-12 col-md-6">
+                    <img src="/static/images/group_photo.jpg" alt="Group Photo" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Link to locally stored Bootstrap JS -->
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 </body>

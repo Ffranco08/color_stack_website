@@ -9,15 +9,12 @@ nav {
 
 /* Style for the larger oval around the smaller oval */
 .outer-oval {
-    display: flex; /* Use flexbox to align items (image, nav-list, login, etc.) */
-    align-items: center; /* Vertically align the children */
-    justify-content: center; /* Center all items horizontally */
     padding: 10px; /* Affects the thickness around the oval */
-    width: 1300px; /* Set the width for the outer oval */
+    width: 90%; /* Scales the width to 90% of the parent/container width */
+    max-width: 1300px; /* Prevents it from exceeding 1300px */
     min-height: 60px; /* Set a minimum height */
     border-radius: 30px; /* Round corners */
     background-color: #000000;
-    margin: 0 auto; /* Center the outer oval horizontally */
 }
 
 /* Style for the smaller oval around the ul elements */
@@ -25,9 +22,11 @@ nav {
     list-style-type: none; /* Remove default list styling */
     padding: 10px; 
     display: inline-flex;
-    gap: 15px; /* Space between list items */
+    gap: 50px; /* Space between list items */
     border-radius: 25px;
     background-color: #FFFFFF;
+    width: 50%; 
+
 }
 
 /* List items */
@@ -57,27 +56,76 @@ nav {
 /* Style for the login button (Base Attributes) */
 .login-button {
     display: inline-block;
-    padding: 10px 16px; /* Oval dimensions */
+    padding: 10px 20px; /* Oval dimensions */
     border-radius: 25px; /* Oval's roundness */
-    background-color: #FCB432;
-    color: #000000;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
-    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Links inside the login button */
+
 .login-button a {
-    color: inherit;
-    text-decoration: none; /* Removes underline for link */
-}
-
-.login-button a:hover {
-    color: #FFFFFF;
+    text-decoration: none; /* Ensure no underline on the link inside .login-button */
+    color: inherit; /* Inherit the text color from parent */
 }
 
 .nav-image {
     width: 60px;  
     height: 60px;  
+}
+
+.hero-section {
+    padding: 10px; 
+    width: 90%; 
+    max-width: 1300px;
+    background-color: #000; 
+    color: white; 
+    border-radius: 30px; 
+    margin: 0 auto; 
+  }
+  
+.container-fluid {
+    width: 90% 
+    margin 0 auto;
+  }
+
+  .text-section h1 {
+    font-weight: bold;
+    line-height: 1.4;
+  }
+  
+  .text-section .description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .button-group .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px; 
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+.button-style {
+    display: inline-block;
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #FCB432;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.button-hover:hover {
+    color: #fff;
+    background-color: #f5b14c
+}
+
+.rounded {
+    border-radius: 25px !important;
+    /* border-radius: var(--bs-border-radius) !important; */
 }
