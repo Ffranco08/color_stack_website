@@ -1,7 +1,6 @@
 /* Global setting for the entire page */
 * {
     font-family: 'New Courier', Helvetica, Arial, sans-serif !important;
-    font-size: 1rem;
 }
 
 /* Style for the large outer oval around the whole nav bar */
@@ -140,4 +139,17 @@ nav {
 .rounded {
     border-radius: 25px !important;
     /* border-radius: var(--bs-border-radius) !important; */
+}
+
+.custom-heading {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.button-group .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    text-transform: none; /* Remove uppercase */
+    font-weight: bold;
 }
