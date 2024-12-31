@@ -1,8 +1,10 @@
 /* Global setting for the entire page */
 * {
     font-family: 'New Courier', Helvetica, Arial, sans-serif !important;
+    margin-bottom: 0 !important;
 }
 
+/* Style for the nav bar */
 /* Style for the large outer oval around the whole nav bar */
 nav {
     text-align: center;
@@ -48,7 +50,7 @@ nav {
 /* Links styling */
 .nav-list a {
     padding: 5px;
-    border-radius: 15px; /* Smaller oval shape */
+    border-radius: 15px; 
     text-decoration: none;
     color: #000000;
     font-size: 16px;
@@ -57,7 +59,7 @@ nav {
 
 /* Hover effect */
 .nav-list a:hover {
-    background-color: #FCB432; /* Darker shade for hover effect */
+    background-color: #FCB432; 
     border-radius: 15px;
     color: #FFFFFF;
     padding: 5px;
@@ -74,7 +76,7 @@ nav {
 
 .login-button a {
     text-decoration: none; /* Ensure no underline on the link inside .login-button */
-    color: inherit; /* Inherit the text color from parent */
+    color: inherit; 
 }
 
 .nav-image {
@@ -82,6 +84,7 @@ nav {
     height: 60px;  
 }
 
+/* Hero Section Styling */
 .hero-section {
     padding: 10px; 
     width: 90%; 
@@ -89,7 +92,7 @@ nav {
     background-color: #000; 
     color: white; 
     border-radius: 30px; 
-    margin: 0 auto; 
+    margin: 0px auto; /* Center the hero section */
   }
   
 .container-fluid {
@@ -152,4 +155,40 @@ nav {
     border-radius: 25px;
     text-transform: none; /* Remove uppercase */
     font-weight: bold;
+}
+
+/* Impact Stats Section Styling */
+.impact-stats-section {
+    padding: 10px 0; /* Just some top and bottom padding */
+    margin: 0px auto;
+}
+
+.section-title {
+    border-bottom: 4px solid #000; /* Black line below */
+    padding-bottom: 10px; /* Optional: Adds some space between text and line */
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.stat-item {
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    color: black; 
+    text-align: center;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-item {
+        margin-bottom: 20px;
+    }
 }
