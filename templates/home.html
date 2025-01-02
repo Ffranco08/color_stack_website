@@ -52,7 +52,7 @@
 
                 <!-- Right Section (Image) -->
                 <div class="image-section col-12 col-md-6">
-                    <img src="/static/images/group_photo.jpg" alt="Group Photo" class="img-fluid rounded shadow">
+                    <img src="/static/images/group_photo.jpg" alt="Group Photo" class="img-fluid rounded">
                 </div>
             </div>
         </div>
@@ -81,19 +81,25 @@
     </div>
 
     <!-- Student Spotlight Section -->
-    <div class="student-spotlight-section mt-5">
+    <div class="student-spotlight-section">
         <div class="container-fluid">
-            <div class="rounded-background p-5">
+            <div class="rounded-background p-4">
                 <div class="row align-items-center">
                     <!-- Left Section (Description) -->
                     <div class="col-12 col-md-6 text-section">
-                        <h2 class="custom-heading", style="color: #FCB432;">
+                        <h2 class="custom-heading text-center", style="color: #FCB432;">
                             Student Spotlight
                         </h2>
-                        <div class="description-box p-3 mt-3">
+                        <div class="description-box p-3 mt-3 justify-content-center align-items-center">
                             <p>
-                                Baller-ass webdev and data scientist. Literally me.
+                                Name: Francisco Franco <br>
+                                Major: Data Science<br>
+                                Year: Sophmore<br>
+                                <br>
+                                Hi! My name is Francisco Franco and I'm responsible for building the webpage for ColorStack @ UCSD. 
+                                I'm looking forward to sharing the spotlight here with other members of the club!
                             </p>
+                            
                             <div class="button-group d-flex justify-content-end mt-3">
                                 <a href="#" class="btn button-style button-hover">Socials</a>
                             </div>
@@ -101,8 +107,8 @@
                     </div>
 
                     <!-- Right Section (Image) -->
-                    <div class="col-12 col-md-6 image-section text-center">
-                        <img src="/static/images/SPIS_Image.jpg" alt="Student Spotlight" class="img-fluid rounded shadow">
+                    <div class="col-12 col-md-6 image-section justify-content-center align-items-center">
+                        <img src="/static/images/SPIS_Image.jpg" alt="Student Spotlight" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
@@ -112,4 +118,17 @@
     <!-- Link to locally stored Bootstrap JS -->
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 </body>
+
+<footer class="sponsors-section container-fluid">
+    <div class="sponsors-container rounded p-4 mx-auto">
+        <h2 class="text-center text-white">Our Sponsors</h2>
+        <div class="sponsors-logos d-flex justify-content-center align-items-center flex-wrap gap-4 mt-3">
+            <img src="sponsor1.png" alt="Sponsor 1" class="sponsor-logo">
+            <img src="sponsor2.png" alt="Sponsor 2" class="sponsor-logo">
+            <img src="sponsor3.png" alt="Sponsor 3" class="sponsor-logo">
+            <!-- Add more logos as needed -->
+        </div>
+    </div>
+</footer>
+
 </html>
