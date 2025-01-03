@@ -1,5 +1,4 @@
 /* Style for the nav bar */
-/* Style for the large outer oval around the whole nav bar */
 nav {
     text-align: center;
     margin-top: 40px;
@@ -113,8 +112,8 @@ nav {
   
   .image-section img {
     max-width: 100%;
-    border: 5px solid white; /* Adds a white border */
-    border-radius: 10px; /* Optional: to give rounded corners */
+    border: 5px solid white; 
+    border-radius: 10px; 
   }
 
 .button-style {
@@ -218,12 +217,12 @@ nav {
 
 /* Image Section */
 .student-spotlight-section .image-section img {
-    max-width: 95%; /* Adjust the percentage here */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensures proper centering */
-    margin: 0 auto; /* Centers the image horizontally */
-    border: 5px solid white; /* Adds a white border */
-    border-radius: 10px; /* Optional: to give rounded corners */
+    max-width: 95%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+    border: 5px solid white; 
+    border-radius: 10px; 
 }
 
 /* Flexbox Adjustments for Layout */
@@ -254,31 +253,31 @@ nav {
 
 /* Sponsors Section Styling */
 .sponsors-section {
-    background-color: black; /* Set background to black */
-    padding: 20px 0; /* Add vertical padding */
+    background-color: black; 
+    padding: 20px 0; 
 }
 
 .sponsors-container {
-    max-width: 1300px; /* Limit to 1300px */
-    background-color: black; /* Match black theme */
-    border-radius: 25px; /* Rounded corners */
-    margin: 0 auto; /* Center container */
-    text-align: center; /* Center text */
-    padding: 20px; /* Add padding inside the container */
+    max-width: 1300px; 
+    background-color: black; 
+    border-radius: 25px; 
+    margin: 0 auto; 
+    text-align: center;
+    padding: 20px;
 }
 
 .sponsors-logos {
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow wrapping of logos on smaller screens */
-    gap: 20px; /* Add spacing between logos */
-    justify-content: center; /* Center align logos */
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center;
 }
 
 .sponsor-logo {
-    max-width: 150px; /* Restrict logo size */
-    max-height: 80px; /* Restrict logo size */
-    object-fit: contain; /* Preserve aspect ratio */
-    transition: transform 0.3s; /* Add hover effect */
+    max-width: 150px; 
+    max-height: 80px; 
+    object-fit: contain;
+    transition: transform 0.3s; 
 }
 
 .sponsor-logo:hover {
@@ -290,11 +289,11 @@ nav {
 /* Larger Screens */
 @media (min-width: 1024px) {
     .sponsors-container {
-        padding: 40px; /* Extra padding on larger screens */
+        padding: 40px; 
     }
 
     .sponsor-logo {
-        max-width: 200px; /* Larger logos on bigger screens */
+        max-width: 200px; 
         max-height: 100px;
     }
 }
@@ -302,11 +301,11 @@ nav {
 /* Medium Screens (Tablets) */
 @media (max-width: 1024px) {
     .sponsors-container {
-        padding: 30px; /* Adjust padding for tablets */
+        padding: 30px; 
     }
 
     .sponsor-logo {
-        max-width: 150px; /* Standard logo size */
+        max-width: 150px; 
         max-height: 80px;
     }
 }
@@ -314,16 +313,17 @@ nav {
 /* Small Screens (Mobile) */
 @media (max-width: 768px) {
     .sponsors-container {
-        padding: 20px; /* Compact padding for mobile */
+        padding: 20px; 
     }
 
     .sponsors-logos {
-        flex-direction: column; /* Stack logos vertically */
-        gap: 15px; /* Adjust spacing for smaller screens */
+        flex-direction: column; 
+        gap: 15px; 
     }
 
     .sponsor-logo {
-        max-width: 120px; /* Smaller logos on mobile */
+        max-width: 120px; 
         max-height: 60px;
     }
 }
+

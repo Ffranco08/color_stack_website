@@ -1,12 +1,17 @@
 # importing Flask class and render_template function from flask library
 from flask import Flask, render_template
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder = 'static')
 
 # @app.route("/") is a decorator provided by Flask that tells Flask that functions underneath run when requests for "/" (main/home page)
 @app.route("/")
 def Hello_ColorStack():
     return render_template('home.html')
+
+# Login page route
+@app.route("/login")
+def login():
+    return render_template('login.html')
 
 '''
 when we run app.py, __name__ is set to __main___
