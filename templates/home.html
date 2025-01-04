@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <title>UCSD ColorStack</title>
-    <!-- Link to locally stored Bootstrap CSS -->
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
-    <!-- Link to your custom CSS file -->
-    <link href="{{ url_for('static', filename='home.css') }}" rel="stylesheet">   
+    <link href="{{ url_for('static', filename='home.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">   
     
 </head>
 <body>
@@ -20,11 +19,12 @@
                 <li class="mx-2"><a href="#" class="text-decoration-none">About</a></li>
                 <li class="mx-2"><a href="#" class="text-decoration-none">Events</a></li>
                 <li class="mx-2"><a href="#" class="text-decoration-none">Board</a></li>
+                <li class="mx-2"><a href="#" class="text-decoration-none">Leaderboard</a></li>
             </ul>
         
             <!-- Login Button -->
             <div class="login-button button-style button-hover">
-                <a href="#">Login</a>
+                <a href="/login">Login</a>
             </div>
         </div>
     </nav>
