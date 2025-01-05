@@ -1,7 +1,17 @@
 # importing Flask class and render_template function from flask library
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect, url_for
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__, static_folder = 'static')
+
+# Configure the PostgreSQL connection
+app.config['SQLALCHEMY_DATABASE_URI'] = (
+    "postgresql://frfranco@ucsd.edu:hVk@8j!6CyqN5H.@your-database-host.render.com/color_stack_website"
+)
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  # Avoid overhead
+
+# Initialize the database
+db = SQLAlchemy(app)
 
 # @app.route("/") is a decorator provided by Flask that tells Flask that functions underneath run when requests for "/" (main/home page)
 @app.route("/")
@@ -9,9 +19,15 @@ def Hello_ColorStack():
     return render_template('home.html')
 
 # Login page route
-@app.route("/login")
+@app.route('/login', methods=['GET', 'POST'])
 def login():
-    return render_template('login.html')
+    if request.method == 'POST':
+        # Handle form submission
+        username = request.form['username']
+        password = request.form['password']
+        return f"Username: {username}, Password: {password}"
+    else: 
+        return render_template('login.html')
 
 '''
 when we run app.py, __name__ is set to __main___
